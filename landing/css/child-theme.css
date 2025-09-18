@@ -16455,7 +16455,7 @@ footer a {
   letter-spacing: 0.1em;
 }
 #wrapper-navbar #main-nav .nav-content .nav-items li a:hover {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(201, 161, 91, 0.9);
 }
 @media (max-width: 991px) {
   #wrapper-navbar #main-nav .nav-content .nav-items li a {
