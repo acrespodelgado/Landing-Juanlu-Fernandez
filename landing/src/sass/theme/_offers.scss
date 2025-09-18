@@ -1,0 +1,33 @@
+#offers {
+
+    .bg-green {
+        padding: 5rem;
+        background: $accent;
+        text-align: center;
+
+        h3 {
+            font-size: 46px;
+            font-weight: 400;
+            color: $primary;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-top: 1.5rem;
+            font-size: 19px;
+            font-weight: 400;
+            color: $white;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .bg-green {
+            height: 500px;
+        }
+    }
+}

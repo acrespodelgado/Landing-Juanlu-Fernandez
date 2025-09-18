@@ -1,0 +1,122 @@
+/* --- Menú sin desplegar --- */
+
+#wrapper-navbar {
+
+    &.transparent #main-nav {
+        background: transparent;
+    }
+
+    #main-nav {
+        position: relative;
+        background-color: $primary;
+        padding: 1rem 2rem;
+        transition: all 0.3s ease-in;
+        z-index: 999;
+        overflow: visible; // importante si algún contenedor está cortando
+        display: flex;
+        align-items: center;
+        min-height: 140px;
+    
+        &.transparent {
+            background-color: $transparent !important;
+            transition: all 0.3s ease-in-out;
+    
+            a {
+                color: $white;
+                opacity: 0.83;
+            }
+        }
+    
+        .navbar-brand {
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .button-block {
+            position: relative;
+            display: inline-block;
+
+            a.btn-primary {
+                z-index: 2;
+            }
+
+            a.btn-white {
+                z-index: 2;
+                border: 1px solid $white;
+                background: $white;
+                color: $primary;
+            }
+
+            .btn-outline {
+                z-index: 1;
+            }
+
+            &:hover {
+                transition: all 0.3s ease-in-out;
+
+                a.btn {
+                    opacity: 1;
+                }
+
+                .btn-outline-primary {
+                    background: none;
+                    cursor: default;
+                }
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .button-block {
+
+                a.btn {
+                    font-size: 11px;
+                    font-weight: 600;
+                    padding: 1px 10px;
+                }
+
+                .btn-outline {
+                    height: 25.28px;
+                    top: -5px;
+                    left: 5px;
+                }
+            }
+
+            .navbar-brand {
+
+                img {
+                    max-width: 75%;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+ ** Dropdown movil pantalla completa
+*/
+
+#navbarNavDropdown {
+
+    @media (max-width: 767px) {
+        padding: 5rem 0;
+        transition: all 0.2s ease-in;
+    
+        &.collapse {
+            height: 100vh;
+    
+            #main-menu {
+                justify-content: center;
+                align-items: center;
+    
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

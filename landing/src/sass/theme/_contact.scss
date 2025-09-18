@@ -1,0 +1,122 @@
+#contacto {
+
+    h1 {
+        color: $primary;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .wpcf7 {
+        max-width: 100%;
+
+        label {
+            font-size: 21px;
+            font-weight: 400;
+            color: $primary;
+            text-transform: uppercase;
+        }
+
+        textarea {
+            height: 0px;
+        }
+
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .wpcf7-spinner {
+        display: none;
+    }
+    
+    .wpcf7-submit,
+    .wpcf7 input[type=submit] {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $primary;
+        width: auto;
+        text-align: center;
+        border-radius: 0px;
+        border: 1px solid $primary;
+        padding: 0.5rem 4rem;
+        margin: 3rem 0;
+        transition: all 0.3s ease-in;
+    }
+    
+    .wpcf7-submit:hover,
+    .wpcf7 input[type=submit]:hover,
+    .wpcf7-submit:focus-visible,
+    .wpcf7 input[type=submit]:focus-visible {
+        background: $primary;
+        color: $white;
+        border: 1px solid $primary;
+        box-shadow: none;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .wpcf7-submit:focus,
+    .wpcf7 input[type=submit]:focus {
+        color: $white;
+        border: 1px solid $primary;
+        box-shadow: none;
+    }
+    
+    .wpcf7 input[type=email],
+    .wpcf7 input[type=text],
+    .wpcf7 textarea {
+        border: 0px;
+        border-radius: 0px;
+        border-bottom: 1px solid $primary;
+        transition: all 0.3 ease-in;
+    }
+    
+    .wpcf7 input[type=email]:focus,
+    .wpcf7 input[type=text]:focus,
+    .wpcf7 textarea:focus:focus {
+        border-bottom: 1px solid $accent;
+        transition: all 0.3 ease-in-out;
+        box-shadow: none;
+    }
+    
+    .wpcf7 input[type=email]:focus-visible,
+    .wpcf7 input[type=text]:focus-visible,
+    .wpcf7 textarea:focus:focus-visible {
+        outline: none;
+    }
+    
+    .elementor-widget.elementor-widget-shortcode {
+        max-width: 100%;
+    }
+
+    .elementor-element {
+
+        .primary-background {
+            background: $primary;
+            padding: 0.5rem 4rem;
+            text-align: center;
+
+            li,
+            li a {
+                font-size: 19px;
+                font-weight: 300;
+                color: $white;
+            }
+
+            li a {
+                text-decoration: none;
+            }
+
+            @media (max-width: 560px) {
+                & {
+                    padding: 0.5rem 2rem;
+                }
+            }
+        }
+    }
+}

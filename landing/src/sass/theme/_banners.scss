@@ -1,0 +1,193 @@
+#banners {
+
+    .bg {
+        padding: 7rem 3rem;
+        align-items: center;
+
+        h2 {
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: 0.3em;
+            color: $white;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid $white;
+            text-align: center;
+            transform-origin: 100% -8px;
+            transform: translateX(-50%) rotate(-90deg) translateY(-100%);
+            white-space: nowrap;
+            width: max-content;
+
+            .big {
+                font-size: 30px;
+                letter-spacing: normal;
+            }
+        }
+
+        .img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                object-fit: contain;            
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            color: $white;
+        }
+
+        a {
+            margin-top: 2rem;
+        }
+
+        &.bg-gold {
+            position: relative;
+            background: $primary;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30%;
+                height: 100%;
+                background-image: url('../../../../../../img/banner_lu_derecha.png');
+                background-size: cover;
+                background-position: right center;
+                mask-image: linear-gradient(to right, transparent 10%, rgba(0,0,0,1) 100%);
+                -webkit-mask-image: linear-gradient(to right, transparent 10%, rgba(0,0,0,1) 100%);
+            }
+
+            a {
+                color: $gold;
+
+                &:hover {
+                    background: rgba($gold, 0.8);
+                    color: $white;
+                }
+            }
+        }
+    
+        &.bg-red {
+            position: relative;
+            background: $red;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30%;
+                height: 100%;
+                background-image: url('../../../../../../img/banner_krombol_derecha.png');
+                background-size: cover;
+                background-position: right center;
+                mask-image: linear-gradient(to right, transparent 10%, rgba(0,0,0,1) 100%);
+                -webkit-mask-image: linear-gradient(to right, transparent 10%, rgba(0,0,0,1) 100%);
+            }
+
+            a {
+                color: $red;
+
+                &:hover {
+                    background: rgba($red, 0.8);
+                    color: $white;
+                }
+            }
+        }
+    
+        &.bg-orange {
+            position: relative;
+            background: $orange;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30%;
+                height: 100%;
+                background-image: url('../../../../../../img/banner_bina_derecha.png');
+                background-size: cover;
+                background-position: right center;
+                mask-image: linear-gradient(to right, transparent 10%, rgba(0,0,0,1) 100%);
+                -webkit-mask-image: linear-gradient(to right, transparent 10%, rgba(0,0,0,1) 100%);
+            }
+
+            a {
+                color: $orange;
+
+                &:hover {
+                    background: rgba($orange, 0.8);
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .bg {
+            position: relative;
+            z-index: 0;
+
+            h2, p, a, .img-container {
+                position: relative;
+                z-index: 2;
+            }
+
+            h2 {
+                transform: none;
+                transform-origin: initial;
+                width: auto;
+            }
+
+            p {
+                margin-top: 2rem;
+            }
+
+            &.bg-gold, &.bg-red, &.bg-orange {
+                &::before {
+                    top: auto;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 85%;
+                    background-position: center bottom;
+                    background-size: cover;
+                    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.9) 60%);
+                    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.9) 60%);
+                }
+            }
+
+            .img-container {
+                margin: 2rem 0;
+                
+                img {
+                    max-height: 80px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) { 
+        .bg {
+
+            &.bg-gold, &.bg-red, &.bg-orange {
+                
+                &::before {
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.menu-item-gtranslate {
+
+    a.gt-current-wrapper {
+        display: none;
+    }
+
+    .sub-menu {
+        background: none;
+        border: 0px;
+        display: inline-flex !important;
+    }
+
+    /*
+    > a  { 
+        width: 0; 
+        height: 0; 
+        overflow: hidden; 
+        padding: 0; 
+
+        &:before { content: ''; }
+    }
+
+    .dropdown-menu {
+
+        a:after { content: ' | '; } 
+
+        .menu-item-gtranslate-child:last-child a:after { content: '' !important; }
+    }
+        */
+}
+
+#google_translate_element2 { display: none !important; }

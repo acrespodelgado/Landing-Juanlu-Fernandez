@@ -1,0 +1,26 @@
+.n2-section-smartslider {
+    height: auto;
+
+    @media (max-width: 767px) {
+        height: 100vh;
+
+        #n2-ss-2 {
+            height: 100vh !important;
+
+            .n2-ss-slide {
+                .n2-ss-layer-with-background {
+                    height: 100vh !important;
+                    background-position: left center !important;
+
+                    h1 {
+                        font-size: 26px !important;
+                    }
+
+                    h2 {
+                        font-size: 32px !important;
+                    }
+                }
+            }
+        }
+    }
+}
