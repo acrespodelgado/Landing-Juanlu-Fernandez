@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div id="wrapper-navbar" class="fixed-top transparent">
     <?php if ( ! has_custom_logo() ): ?>
         <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
-            <img class="logo logo-text" src="<?php echo get_site_url() . '/img/logo.svg';?>" alt="<?php _e('Logo Juanlu Fernández', 'understrap-master'); ?>">
+            <img class="logo logo-text zoom" src="<?php echo get_site_url() . '/img/logo.svg';?>" alt="<?php _e('Logo Juanlu Fernández', 'understrap-master'); ?>">
         </a>
     <?php endif; ?>
 

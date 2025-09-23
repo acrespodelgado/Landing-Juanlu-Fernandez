@@ -16341,6 +16341,15 @@ a:hover {
   border: 1px solid #FFF;
 }
 
+.zoom {
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.zoom:hover {
+  transform: scale(1.08);
+  filter: brightness(0.9);
+  opacity: 0.63;
+}
+
 footer {
   background: #C9A15B;
   color: #FFF;
@@ -16772,6 +16781,13 @@ footer a {
 .n2-section-smartslider {
   height: auto;
 }
+.n2-section-smartslider div#n2-ss-2 .n2-ss-button-container a div {
+  transition: all 0.3s ease-in;
+}
+.n2-section-smartslider div#n2-ss-2 .n2-ss-button-container a div:hover {
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
 @media (max-width: 767px) {
   .n2-section-smartslider {
     height: 100vh;
@@ -16784,6 +16800,7 @@ footer a {
     background-position: left center !important;
   }
   .n2-section-smartslider #n2-ss-2 .n2-ss-slide .n2-ss-layer-with-background h1, .n2-section-smartslider #n2-ss-2 .n2-ss-slide .n2-ss-layer-with-background .h1 {
+    margin-top: 70% !important;
     font-size: 24px !important;
   }
   .n2-section-smartslider #n2-ss-2 .n2-ss-slide .n2-ss-layer-with-background h2, .n2-section-smartslider #n2-ss-2 .n2-ss-slide .n2-ss-layer-with-background .h2 {

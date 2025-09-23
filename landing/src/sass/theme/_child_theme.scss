@@ -114,3 +114,13 @@ a {
         }
     }
 }
+
+.zoom {
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        transform: scale(1.10);
+        filter: brightness(0.9);
+        opacity: 0.63;
+    }
+}

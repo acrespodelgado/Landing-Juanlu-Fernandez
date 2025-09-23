@@ -1,6 +1,25 @@
 .n2-section-smartslider {
     height: auto;
 
+    div#n2-ss-2 {
+
+        .n2-ss-button-container {
+
+            a {
+
+                div {
+                    transition: all 0.3s ease-in;
+
+                    &:hover {
+                        font-size: 15px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+
+    }
+
     @media (max-width: 767px) {
         height: 100vh;
 
@@ -13,6 +32,7 @@
                     background-position: left center !important;
 
                     h1 {
+                        margin-top: 70% !important;
                         font-size: 24px !important;
                     }
 
