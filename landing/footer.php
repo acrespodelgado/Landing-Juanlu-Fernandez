@@ -46,10 +46,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<h3><a href="<?php echo get_site_url();?>/contacto" title="<?php _e( 'Contacto', 'understrap-master' ); ?>"><?php _e( 'Contacto ', 'understrap-master' ); ?></a></h3>
 					<div class="row mt-4 mt-sm-0">
 						<div class="col-12 col-md-6 col-xl-4">
-							<p><span class="uppercase"><?php _e( 'Email: ', 'understrap-master' ); ?></span><a href="mailto:info@binabar.com" target="_blank"><?php _e( 'info@binabar.com', 'understrap-master' ); ?></a></p>
+							<p><span class="uppercase"><?php _e( 'Email: ', 'understrap-master' ); ?></span><a href="mailto:info@lucocinayalma.com" target="_blank"><?php _e( 'info@lucocinayalma.com', 'understrap-master' ); ?></a></p>
 						</div>	
 						<div class="col-12 col-md-6 col-xl-8">
-							<p><span class="uppercase"><?php _e( 'Ubicación: ', 'understrap-master' ); ?></span><a href="https://maps.app.goo.gl/5hSNTgJdJ64i3cX67" target="_blank"><?php _e( 'C/Jose Cádiz Salvatierra, 7', 'understrap-master' ); ?></a><span class="separate-left"><?php _e( 'Jerez De La Frontera', 'understrap-master' ); ?></span></p>
+							<p><span class="uppercase"><?php _e( 'Ubicación: ', 'understrap-master' ); ?></span><a href="https://maps.app.goo.gl/tuX1yd2QVwmy5HWP6" target="_blank"><?php _e( 'Jerez de la Frontera', 'understrap-master' ); ?></a></p>
 						</div>
 					</div>
 				</div>
