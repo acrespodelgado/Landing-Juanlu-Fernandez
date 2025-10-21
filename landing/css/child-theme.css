@@ -16345,7 +16345,7 @@ a:hover {
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .zoom:hover {
-  transform: scale(1.08);
+  transform: scale(1.1);
   filter: brightness(0.9);
   opacity: 0.63;
 }
@@ -16508,6 +16508,9 @@ footer a {
 #politica {
   margin-top: 10rem;
 }
+#politica .page {
+  padding: 3rem 0;
+}
 #politica h1, #politica .h1 {
   color: #C9A15B;
   font-size: 50px;
@@ -16525,13 +16528,18 @@ footer a {
   }
 }
 #politica h2, #politica .h2 {
-  color: #000;
+  color: #C9A15B;
   font-size: 22px;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 0.5rem 0;
+}
+#politica h3, #politica .h3 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 #politica p {
   color: #000;
@@ -16785,7 +16793,7 @@ footer a {
   transition: all 0.3s ease-in;
 }
 .n2-section-smartslider div#n2-ss-2 .n2-ss-button-container a div:hover {
-  font-size: 16px;
+  font-size: 15px;
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
